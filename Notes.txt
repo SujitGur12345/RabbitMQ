@@ -1,0 +1,13 @@
+RabbitMQ ----> message broker that originally implements the advance Queuing Protocol (AMQP) . Producers , Broker and Consumer
+Producer ---> Sends the Message
+Broker ----> Holds The Message
+Consumer ---> Consume the Message
+
+Key Feature :
+  Security : support authentication , authorization , LDAP and TLS via RabbitMQ Plugins
+
+  Reliability : support two-way communication ( confirms message delivered to broker and    consumer confirms message consume by Consumer)
+
+Interoperability : message transfer as Stream of bytes any client can operate on irrespective of any language
+
+Producer is not tightly coupled with Queue , producer sends message to Exchange and exchange passes to Queue (Exchange and Queue are linked together using Routing Key)
